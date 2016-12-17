@@ -1,0 +1,23 @@
+<!-- Registration page for Butler 1.0 by JAttwood, 12/1/16 -->
+
+<html>
+<head>
+<title>Registration</title>
+</head>
+<body>
+<div align = 'center'> <h1>Registration</h1>
+<br>
+Username    
+<input type = "text" id = "nameBox" size = "20" autofocus/>
+<br>
+Password    
+<input type = "password" id = "passwordBox1" size = "20" maxlength = "20"/>
+<br>
+Password
+<input type = "password" id = "passwordBox2" size = "20" maxlength = "20" onkeydown="if (event.keyCode == 13) document.getElementById('login').click()"/>
+<br><br>
+<input type = "button" value = "Submit" id = "submit">
+<script src = "/socket.io/socket.io.js"></script>
+<script src = "register.js"></script>
+</body>
+</html>

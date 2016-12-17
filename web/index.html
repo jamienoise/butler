@@ -1,0 +1,20 @@
+<!-- Homepage HTML file for Butler, 11/13/16 -->
+
+
+<html>
+<head>
+<title>Butler</title>
+</head>
+<body bgcolor="1a1a1a">
+<h1><p align="center", style="color: white">Butler<br>
+<div id = "outputArea" align = center>
+<textarea id = "output" cols = "100" rows = "30" disabled = "disabled" style="color: white; background-color: black"></textarea><br></div>
+<div id = "textinput" align = center>
+<input type = "text" id = "inputBox" size = "90" autofocus onkeydown="if (event.keyCode == 13) document.getElementById('send').click()"/>
+<input type = "button" value = "Send" id = "send">
+</div>
+</p></h1>
+<script src = "/socket.io/socket.io.js"> </script> <!-- this line loads the socket.io client script the server makes public -->
+<script src="client.js"> </script>
+</body>
+</html>
